@@ -1,7 +1,7 @@
 // index.js — root entry
-const Viewer = require('./lib/camunda-platform/Viewer');  // adjust path according to your build output
-const Modeler = require('./lib/camunda-platform/Modeler'); // adjust path
+const Viewer = require('./lib/camunda-platform/Viewer');
+const Modeler = require('./lib/camunda-platform/Modeler');
 
-module.exports = Viewer; // default export
-module.exports.Viewer = Viewer;
+module.exports = Modeler;       // ✅ default export → Modeler
 module.exports.Modeler = Modeler;
+module.exports.Viewer = Viewer;
