@@ -1,10 +1,11 @@
 {
-  "name": "camunda-bpmn-js",
-  "version": "5.14.2",
+  "name": "@itzmirsha/camunda-bpmn-js",
+  "version": "1.0.1",
   "description": "Embeddable Camunda modeling distributions based on bpmn-js",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
+    "build": "rollup -c",
     "all": "run-s clean lint test generate-types distro test:distro",
     "lint": "eslint .",
     "dev": "npm test -- --auto-watch --no-single-run",
@@ -127,6 +128,8 @@
     "lib",
     "styles",
     "util",
+    "index.js",
+    "index.d.ts",
     "!lib/**/*.spec.ts"
   ],
   "remarkConfig": {
